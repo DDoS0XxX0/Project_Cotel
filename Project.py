@@ -2,7 +2,7 @@ import random
 import time
 import os
 
-# --- Модель объекта управления ---
+# Модель объекта управления
 class Boiler:
     def __init__(self):
         self.temp = 20.0      # температура
@@ -38,7 +38,7 @@ class Boiler:
             alarms.append("⚠️ АВАРИЯ: Низкий уровень!")
         return alarms
 
-# --- Интерфейс диспетчера ---
+# Интерфейс диспетчера 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -64,7 +64,7 @@ def show_status(boiler):
     print("[2] Вкл/Выкл насос")
     print("[q] Выход")
 
-# --- Главный цикл ---
+# Главный цикл 
 boiler = Boiler()
 running = True
 
